@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Medonline</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #dbf6db;
+    }
+
+    .navbar {
+      background-color: #2a9d8f;
+    }
+    .navbar-brand {
+      color: #fff;
+    }
+    .navbar-nav .nav-link {
+      color: #fff;
+    }
+    .navbar-nav .nav-link:hover {
+      color: #e9f1f1;
+    }
+
+    .contact-header {
+      text-align: center;
+      margin-top: 60px;
+      color: #2a9d8f;
+    }
+
+    .contact-header h2 {
+      font-size: 36px;
+      font-weight: 600;
+    }
+
+    .contact-header p {
+      font-size: 18px;
+      color: #6c757d;
+    }
+
+    .contact-form {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-top: 40px;
+    }
+
+    .contact-form .form-label {
+      font-weight: bold;
+      color: #495057;
+    }
+
+    .contact-info {
+      text-align: center;
+      margin-top: 60px;
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-info h4 {
+      color: #2a9d8f;
+      font-size: 28px;
+      font-weight: 600;
+    }
+
+    .contact-info p {
+      font-size: 18px;
+      color: #6c757d;
+    }
+
+    .contact-info ul {
+      list-style-type: none;
+      padding-left: 0;
+      font-size: 16px;
+      color: #495057;
+    }
+
+    .contact-info ul li {
+      margin-bottom: 12px;
+    }
+
+    .btn-primary {
+      background-color: #2a9d8f;
+      border-color: #2a9d8f;
+    }
+    .btn-primary:hover {
+      background-color: #21867a;
+      border-color: #21867a;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Medonline</a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="ppvc.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="contactus.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cart.html">Cart</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contact Us Header -->
+  <div class="contact-header">
+    <h2>Contact Us</h2>
+    <p>We'd love to hear from you. Please fill out the form below to get in touch.</p>
+  </div>
+
+  <!-- Contact Us Form -->
+  <div class="container">
+    <div class="contact-form">
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label">Your Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="email" class="form-label">Your Email</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="message" class="form-label">Your Message</label>
+          <textarea class="form-control" id="message" rows="4" placeholder="Enter your message" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Contact Information -->
+  <div class="contact-info">
+    <h4>Contact Information</h4>
+    <p>If you prefer, you can reach us through the following methods:</p>
+    <ul>
+      <li><strong>Phone:</strong> +1 234 567 890</li>
+      <li><strong>Email:</strong> support@onlinepharmacy.com</li>
+      <li><strong>Address:</strong> 1234 Pharmacy Street, Health City, Country</li>
+    </ul>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

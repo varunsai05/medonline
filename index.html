@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medicine Online Website</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      background-color: #dbf6db;
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+
+    .hero-section {
+      background: linear-gradient(to right, #479b4a, #5faa63);
+      color: white;
+      font-weight: 500;
+      padding: 50px 0;
+      text-align: center;
+    }
+
+    .hero-section h1 {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+    }
+   
+    .hero-section p {
+      font-size: 1.2rem;
+      margin-bottom: 25px;
+    }
+
+    .card img {
+      height: 300px;
+      object-fit: cover;
+    }
+    .card{
+      background-color: #a2e8a4;
+    }
+
+    footer {
+      background-color: #337e33 !important;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .bg-light{
+      background-color: #479b4a;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">MedOnline</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="aboutus.html">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="medicines.html">Medicines</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactus.html">Contact us</a>
+          </li>
+        </ul>
+        <!-- Search Bar -->
+        <form class="d-flex me-3" onsubmit="handleSearch(event)">
+          <input class="form-control me-2" type="search" id="searchInput" placeholder="Search for medicines or products..." aria-label="Search" required>
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+        <!-- Sign In/Sign Up Button -->
+        <a href="singin.html" class="btn btn-success">Sign In/Sign Up</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="hero-section">
+    <div class="container">
+      <h1>Big Savings on Medicines</h1>
+      <p>Flat 20% Off + 2% Cashback on All Orders</p>
+      <a href="#" class="btn btn-warning btn-lg">Shop Now</a>
+    </div>
+  </div>
+
+  <!-- Features Section -->
+  <div class="container my-5">
+    <div class="row text-center">
+      <div class="col-md-4">
+        <img src="https://th.bing.com/th/id/OIP.13_Zcd3R0f40KOr0eZX_HwHaFS?rs=1&pid=ImgDetMain"width="200px" alt="Medicine" class="rounded-circle mb-3">
+        <h4>Wide Range of Medicines</h4>
+        <p>All your essential medicines in one place.</p>
+      </div>
+      <div class="col-md-4">
+        <img src="https://th.bing.com/th/id/OIP.wUEe1oo-uE38U76V2TSF6wHaE8?rs=1&pid=ImgDetMain"width="200px"  alt="Lab Tests" class="rounded-circle mb-3">
+        <h4>Lab Test Services</h4>
+        <p>Book diagnostic tests at your convenience.</p>
+      </div>
+      <div class="col-md-4">
+        <img src="https://th.bing.com/th/id/OIP.0m0EJel88yImE-Gwa7C5QQHaFj?w=1000&h=750&rs=1&pid=ImgDetMain"width="200px" alt="Wellness" class="rounded-circle mb-3">
+        <h4>Wellness Products</h4>
+        <p>Choose from a variety of wellness items.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Trending Products -->
+  <div class="container my-5">
+    <h2 class="text-center mb-4">Trending Products</h2>
+    <div class="row g-4">
+      <div class="col-md-3">
+        <div class="card">
+          <img src="https://images.apollo247.in/pub/media/catalog/product/2/0/20_1.jpg" class="card-img-top" alt="Product">
+          <div class="card-body text-center">
+            <h5 class="card-title">Omnigel</h5>
+            <p class="card-text">What A Relief!</p>
+            <a href="payment.html" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <img src="https://th.bing.com/th/id/OIP.WbDfc-R-IPywScnumjlREQHaE8?rs=1&pid=ImgDetMain" class="card-img-top" alt="Product">
+          <div class="card-body text-center">
+            <h5 class="card-title">Amore Wellness</h5>
+            <p class="card-text">Natural Health Essentials</p>
+            <a href="payment.html" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <img src="https://th.bing.com/th/id/OIP.xaCN3Mw6C2jsWV4_WslHhAHaFu?rs=1&pid=ImgDetMain" class="card-img-top" alt="Product">
+          <div class="card-body text-center">
+            <h5 class="card-title">Health Drinks</h5>
+            <p class="card-text">Energy Boosters</p>
+            <a href="payment.html" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <img src="https://cf.shopee.ph/file/c88e8dff87c3ae0fac90ac3bde3d8dd1" class="card-img-top" alt="Product">
+          <div class="card-body text-center">
+            <h5 class="card-title">Vitamins</h5>
+            <p class="card-text">Daily Nutrition</p>
+            <a href="payment.html" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container my-5">
+    <h2 class="text-center mb-4">Shop by Category</h2>
+    <div class="row row-cols-2 row-cols-md-4 g-4">
+      <!-- Category 1 -->
+      <div class="col text-center">
+        <div class="bg-light p-3 rounded">
+          <img src="https://th.bing.com/th/id/OIP.KWMRtZ15jCpL7mYUajBmcgHaFj?rs=1&pid=ImgDetMain" alt="Vitamins" class="img-fluid mb-3">
+          <h5 class="fw-bold text-success">VITAMINS</h5>
+        </div>
+      </div>
+      <!-- Category 2 -->
+      <div class="col text-center">
+        <div class="bg-light p-3 rounded">
+          <img src="https://th.bing.com/th/id/OIP.0sIJXka0jrLABdKzadl0dAHaE7?rs=1&pid=ImgDetMain" alt="Shampoos" class="img-fluid mb-3">
+          <h5 class="fw-bold text-warning">SHAMPOOS</h5>
+        </div>
+      </div>
+      <!-- Category 3 -->
+      <div class="col text-center">
+        <div class="bg-light p-3 rounded">
+          <img src="https://res.cloudinary.com/lowellgeneral/image/upload/c_fill,w_auto,g_faces,q_auto,dpr_auto,f_auto/orthopedic-center1_BFAFBDC0-FC11-11E9-92C400218628D024.jpg" alt="Orthopaedics" class="img-fluid mb-3">
+          <h5 class="fw-bold text-primary">ORTHOPAEDICS</h5>
+        </div>
+      </div>
+      <!-- Category 4 -->
+      <div class="col text-center">
+        <div class="bg-light p-3 rounded">
+          <img src="https://images.fineartamerica.com/images-medium-large-5/feminine-hygiene-products-trevor-clifford-photographyscience-photo-library.jpg" alt="Feminine Hygiene" class="img-fluid mb-3">
+          <h5 class="fw-bold text-pink">FEMININE HYGIENE</h5>
+        </div>
+      </div>
+      <!-- Category 5 -->
+      <div class="col text-center">
+        <div class="bg-light p-3 rounded">
+          <img src="https://th.bing.com/th/id/OIP.Xe8h7w0CdI2A_DrYVfIXKwHaE8?rs=1&pid=ImgDetMain" alt="Ayurvedic" class="img-fluid mb-3">
+          <h5 class="fw-bold text-danger">AYURVEDIC</h5>
+        </div>
+      </div>
+      <!-- Category 6 -->
+      <div class="col text-center">
+        <div class="bg-light p-3 rounded">
+          <img src="https://nypost.com/wp-content/uploads/sites/2/2021/07/face-wash.jpg?quality=90&strip=all&w=1024" alt="Face Wash & Cleansers" class="img-fluid mb-3">
+          <h5 class="fw-bold text-success">FACE WASH & CLEANSERS</h5>
+        </div>
+      </div>
+      <!-- Category 7 -->
+      <div class="col text-center">
+        <div class="bg-light p-3 rounded">
+          <img src="https://cdn.lifestyleasia.com/wp-content/uploads/sites/3/2020/06/12181449/20689890_10154945578399065_3685850225912584497_o.jpg" alt="Creams/Oils/Lotions" class="img-fluid mb-3">
+          <h5 class="fw-bold text-primary">CREAMS/OILS/LOTIONS</h5>
+        </div>
+      </div>
+      <!-- Category 8 -->
+      <div class="col text-center">
+        <div class="bg-light p-3 rounded">
+          <img src="https://theskincareedit.com/.image/t_share/MTY1MDE2NDM3ODQ3NTAwNzk3/skincare-for-sensitive-skin-1.jpg" alt="Skin Care" class="img-fluid mb-3">
+          <h5 class="fw-bold text-info">SKIN CARE</h5>
+        </div>
+      </div>
+      <!-- Category 9 -->
+      <div class="col text-center">
+        <div class="bg-light p-3 rounded">
+          <img src="https://th.bing.com/th/id/OIP.2LBnePO1J_LSaN2nJerEQQHaEo?rs=1&pid=ImgDetMain" alt="Men's Grooming" class="img-fluid mb-3">
+          <h5 class="fw-bold text-dark">MEN'S GROOMING</h5>
+        </div>
+      </div>
+      <!-- Category 10 -->
+      <div class="col text-center">
+        <div class="bg-light p-3 rounded">
+          <img src="https://th.bing.com/th/id/OIP.v7ON8-fb046Rmt0ontwfnwHaEh?rs=1&pid=ImgDetMain" alt="Fitness" class="img-fluid mb-3">
+          <h5 class="fw-bold text-warning">FITNESS</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container my-5">
+    <h2 class="text-center mb-4">Brands in Focus</h2>
+    <div id="brandsCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <!-- First Slide -->
+        <div class="carousel-item active">
+          <div class="row text-center">
+            <div class="col">
+              <div class="p-3 bg-light rounded">
+                <img src="https://www.lookp.com/assets/logo/himalaya/himalaya-profile.jpg" alt="Himalaya" class="img-fluid mb-3">
+                <h6 class="fw-bold">Himalaya</h6>
+                <p class="text-success">Up to 35% off</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="p-3 bg-light rounded">
+                <img src="https://th.bing.com/th/id/OIP.A5PxEiZgLgiPewTekwcW4QHaGn?rs=1&pid=ImgDetMain" alt="Dabur" class="img-fluid mb-3">
+                <h6 class="fw-bold">Dabur</h6>
+                <p class="text-success">Up to 25% off</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="p-3 bg-light rounded">
+                <img src="https://th.bing.com/th/id/OIP.WTzrur6mjDYx7wv_U6sHWAHaHa?rs=1&pid=ImgDetMain" alt="Cetaphil" class="img-fluid mb-3">
+                <h6 class="fw-bold">Cetaphil</h6>
+                <p class="text-success">Up to 30% off</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="p-3 bg-light rounded">
+                <img src="https://static.vecteezy.com/system/resources/previews/002/512/887/large_2x/green-herbal-logo-template-herbal-100-on-white-background-free-vector.jpg" alt="Revital" class="img-fluid mb-3">
+                <h6 class="fw-bold">Herbal</h6>
+                <p class="text-success">Up to 18% off</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="p-3 bg-light rounded">
+                <img src="https://static.vecteezy.com/system/resources/previews/022/424/389/large_2x/patanjali-editorial-logo-free-vector.jpg" alt="Volini" class="img-fluid mb-3">
+                <h6 class="fw-bold">Patanjali</h6>
+                <p class="text-success">Up to 15% off</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Additional slides can be added here -->
+      </div>
+      <!-- Carousel controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#brandsCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#brandsCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <footer class="bg-dark text-white py-5">
+    <div class="container">
+      <div class="row">
+        <!-- About Section -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5 class="fw-bold">About Us</h5>
+          <p class="small">
+            Your trusted online pharmacy for all health and wellness needs. We provide a wide range of medicines, healthcare products, and expert advice.
+          </p>
+        </div>
+        <!-- Quick Links -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5 class="fw-bold">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="ppvc.html" class="text-white text-decoration-none">Home</a></li>
+            <li><a href="cart.html" class="text-white text-decoration-none">Shop</a></li>
+            <li><a href="aboutus.html" class="text-white text-decoration-none">About Us</a></li>
+            <li><a href="cart.html" class="text-white text-decoration-none">Contact Us</a></li>
+          </ul>
+        </div>
+        <!-- Customer Support -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5 class="fw-bold">Customer Support</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white text-decoration-none">FAQs</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Shipping & Returns</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Terms & Conditions</a></li>
+          </ul>
+        </div>
+        <!-- Contact Us -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5 class="fw-bold">Contact Us</h5>
+          <p class="small">
+            <i class="bi bi-geo-alt"></i> 123 Health Street, Wellness City, 56789
+          </p>
+          <p class="small">
+            <i class="bi bi-envelope"></i> kamavarunsai@gmail.com
+          </p>
+          <p class="small">
+            <i class="bi bi-telephone"></i> +91 93927 54321
+          </p>
+        </div>
+      </div>
+      <hr class="text-secondary">
+      <!-- Social Media & Copyright -->
+      <div class="d-flex justify-content-between align-items-center">
+        <div>
+          <a href="#" class="text-white text-decoration-none me-3"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-white text-decoration-none me-3"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="text-white text-decoration-none me-3"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-white text-decoration-none"><i class="bi bi-linkedin"></i></a>
+        </div>
+        <p class="mb-0 small">© 2024 Medonline All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+    
+
+  
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+     function handleSearch(event) {
+      event.preventDefault(); // Prevent the form from submitting the traditional way
+
+      // Get the search input value
+      var searchQuery = document.getElementById("searchInput").value.toLowerCase();
+
+      // Check the search query and redirect accordingly
+      if (searchQuery === "paracetamol" ) {
+        window.location.href = "paracetamol.html"; // Redirect to paracetamol.html
+      } else if (searchQuery === "vitamin") {
+        window.location.href = "vitamin.html"; // Redirect to ibuprofen.html
+      } else if (searchQuery === "Vitamin") {
+        window.location.href = "vitamin.html"; // Redirect to cetirizine.html
+      } else if (searchQuery === "vitamins") {
+        window.location.href = "vitamin.html"; // Redirect to amoxicillin.html
+      } else {
+        alert("Medicine not found. Please try another search.");
+      }
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

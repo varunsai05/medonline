@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medicines - Online Pharmacy</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body{
+        background-color: #dbf6db;
+    }
+    .medicine-category {
+      border: 2px solid #ddd;
+      border-radius: 10px;
+      margin: 10px;
+      padding: 10px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+    .medicine-category:hover {
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      transform: scale(1.05);
+    }
+    .medicine-category img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+    .medicine-category h4 {
+      color: #007b3d;
+      margin-top: 10px;
+    }
+    .medicine-category p {
+      color: #555;
+      margin-top: 5px;
+    }
+    .medicine-category a {
+      color: #007b3d;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    .medicine-category a:hover {
+      color: #005f2a;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Online Pharmacy</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="ppvc.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutus.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactus.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Medicines Page Content -->
+  <div class="container my-5">
+    <h2 class="text-center mb-4">Medicines</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      
+      <!-- Paracetamol -->
+      <div class="col">
+        <div class="medicine-category">
+          <img src="https://res.cloudinary.com/walmart-labs/image/upload/w_960,dpr_auto,f_auto,q_auto:best/gr/images/product-images/img_large/00750138549521L.jpg" alt="Paracetamol">
+          <h4>Paracetamol</h4>
+          <p>Used for fever and mild to moderate pain relief. It’s one of the most commonly used over-the-counter pain relievers.</p>
+          <a href="paracetamol.html">View Details</a>
+        </div>
+      </div>
+
+      <!-- Ibuprofen -->
+      <div class="col">
+        <div class="medicine-category">
+          <img src="https://i5.walmartimages.com/asr/b4f1569a-1c70-4c64-9508-7d7bf32a140a.4ece12b6cb1b0be5c075af50582d95e7.jpeg" alt="Ibuprofen">
+          <h4>Ibuprofen</h4>
+          <p>A nonsteroidal anti-inflammatory drug (NSAID) used for relieving pain, reducing inflammation, and lowering fever.</p>
+          <a href="ibuprofen.html">View Details</a>
+        </div>
+      </div>
+
+      <!-- Cetirizine -->
+      <div class="col">
+        <div class="medicine-category">
+          <img src="https://i5.walmartimages.com/asr/4c017918-664b-431e-b83b-ca91ebc41ffd_1.cc41f6463e6334c5dae523cd918a216c.jpeg" alt="Cetirizine">
+          <h4>Cetirizine</h4>
+          <p>Used for relieving allergy symptoms such as runny nose, sneezing, and itching caused by hay fever or other allergic conditions.</p>
+          <a href="cetirizine.html">View Details</a>
+        </div>
+      </div>
+
+      <!-- Amoxicillin -->
+      <div class="col">
+        <div class="medicine-category">
+          <img src="https://th.bing.com/th/id/OIP.u8uvdj07CG0AhiDzFJs3HAHaFZ?rs=1&pid=ImgDetMain" alt="Amoxicillin">
+          <h4>Amoxicillin</h4>
+          <p>An antibiotic used to treat various bacterial infections, including ear infections, respiratory infections, and urinary tract infections.</p>
+          <a href="amoxicillin.html">View Details</a>
+        </div>
+      </div>
+
+      <!-- Aspirin -->
+      <div class="col">
+        <div class="medicine-category">
+          <img src="https://th.bing.com/th/id/OIP.VvmCqMCEoNz22ucfpAzzWQHaHa?rs=1&pid=ImgDetMain" alt="Aspirin">
+          <h4>Aspirin</h4>
+          <p>Used for pain relief, reducing inflammation, and as a blood thinner to reduce the risk of heart attacks and strokes.</p>
+          <a href="aspirin.html">View Details</a>
+        </div>
+      </div>
+
+      <!-- Loperamide -->
+      <div class="col">
+        <div class="medicine-category">
+          <img src="https://i5.walmartimages.com/asr/47abe74d-ae35-4980-8a07-faf454579db7_1.189e2c90cb6cb657171337606c489041.jpeg" alt="Loperamide">
+          <h4>Loperamide</h4>
+          <p>A medication used to decrease the frequency of diarrhea by slowing down bowel movement.</p>
+          <a href="loperamide.html">View Details</a>
+        </div>
+      </div>
+    
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
